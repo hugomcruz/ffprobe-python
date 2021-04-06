@@ -119,3 +119,4 @@ pip-selfcheck.json
 
 # Other
 MANIFEST
+.DS_Store
