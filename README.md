@@ -1,6 +1,14 @@
 ffprobe-python module
 =====================
 
+Forked on 6-April-2021 to fix issues as the original repository does not have an active development and reported issues are not fixed. 
+
+This is Hugo Cruz own fixes. 
+
+
+
+
+
 A wrapper around the ffprobe command to extract metadata from media files or streams.
 
 Usage:
