@@ -81,7 +81,7 @@ class FFProbe:
                 #line = line.decode('UTF-8')
                 line = line.decode('UTF-8','ignore')
                 
-                
+                #print(line)
                 
                 if 'Metadata:' in line and not stream_metadata_met:
                     is_metadata = True
@@ -92,8 +92,11 @@ class FFProbe:
                     splits = line.split(',')
                     for s in splits:
                         m = re.search(r'(\w+)\s*:\s*(.*)$', s)
-                        # print(m.groups())
-                        self.metadata[m.groups()[0]] = m.groups()[1].strip()
+
+                        #print(m)
+                        if(m != None):
+                            #print(m.groups())
+                            self.metadata[m.groups()[0]] = m.groups()[1].strip()
 
             
 
